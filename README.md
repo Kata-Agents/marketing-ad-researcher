@@ -43,19 +43,20 @@ dangling clause.
 ## Part of a department
 
 This agent is one member of the **marketing video ad** department, a
-hub-orchestrator team of 7. The hub is `marketing-brief-scoper`, which locks the brief every later
+hub-orchestrator team of 8. The hub is `marketing-campaign-scoper`, which locks the brief every later
 stage reads; the other members are
 reached through it or called directly as `<alias>__<tool>`.
 
 | Agent | Stage in the pipeline |
 |---|---|
-| `marketing-brief-scoper` | 1 — interviews for the brief and freezes it (department hub) |
+| `marketing-campaign-scoper` | 1 — interviews for the brief and freezes it (department hub) |
 | `marketing-ad-researcher` | 2 — competitor harvest plan, longevity ranking, customer voice, coverage |
 | `marketing-angle-strategist` | 3 — scored angle map with auditable arithmetic |
 | `marketing-hook-writer` | 4 — the modular creative bank, built on verbatim customer language |
 | `marketing-ad-scripter` | 5 — modules, continuity kits, prompts, assembly map, QA protocol |
 | `marketing-production-planner` | 6 — blockers, tracks, cost estimate, shoot briefs, release gates |
-| `marketing-ad-tester` | 7 — clip QA, test design, readout, and the feedback loop back to 3, 4 and 5 |
+| `marketing-introgen-briefer` | 7 — hands approved creative to IntroGen as a brief, an avoid list and a briefing record (runs only when IntroGen renders; no repo of its own) |
+| `marketing-ad-tester` | 8 — clip QA, test design, readout, and the feedback loop back to 3, 4 and 5 |
 
 Each member is published independently and works on its own.
 
